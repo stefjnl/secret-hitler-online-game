@@ -277,7 +277,7 @@ class AIPlayer:
 
 class AIDecisionManager:
     """Manages all AI players and their interactions with the GameEngine."""
-    def __init__(self, game_engine: Any):
+    def __init__(self, game_engine: Optional[Any] = None):
         self.game_engine = game_engine
         self.ai_players: Dict[str, AIPlayer] = {}
 
